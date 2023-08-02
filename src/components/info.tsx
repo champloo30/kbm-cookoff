@@ -4,6 +4,7 @@ import React from 'react'
 import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
 import bbq from '../assets/bbq-unsplash.jpg'
+import Link from 'next/link'
 
 export default function Info() {
   return (
@@ -12,7 +13,7 @@ export default function Info() {
       <div className='flex justify-evenly'>
         <div className='flex flex-col gap-8'>
           <ul className='sm:text-xl space-y-2'>
-            <li><span className='text-gray-400'>Location:</span> Kingdom Builders Ministries Campus</li>
+            <li><span className='text-gray-400'>Location:</span> <Link href='https://goo.gl/maps/X2Y7LAHeH1bLiWy6A'>1365 W Orange St Jesup, GA 31545</Link></li>
             <li><span className='text-gray-400'>Date:</span> August 19<sup>th</sup>, 2023</li>
             <li><span className='text-gray-400'>Sign Up Deadline:</span> August 10<sup>th</sup>, 2023</li>
             <li><span className='text-gray-400'>Entry Fee:</span> $100</li>
