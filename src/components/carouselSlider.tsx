@@ -9,7 +9,7 @@ import { items } from '../../public/Items.json'
 const CarouselSlider = () => {
   const { responsive } = items
   return (
-    <div className='relative h-screen w-screen'>
+    <div className='relative h-96 sm:h-screen w-screen'>
       <Carousel
         showArrows={true}
         showIndicators={true}
@@ -21,8 +21,9 @@ const CarouselSlider = () => {
         transitionTime={1500}
       >
         {responsive.map((item) => (
-          <div key={item.id} className='w-screen h-screen opacity-50'>
+          <div key={item.id} className='w-screen h-96 sm:h-screen opacity-50'>
             <Image 
+              className='object-fit object-contain'
               src={item.imageUrl}
               fill
               alt={`Slide ${item.id}`}

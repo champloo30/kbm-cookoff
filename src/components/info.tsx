@@ -7,19 +7,19 @@ import bbq from '../assets/bbq-unsplash.jpg'
 
 export default function Info() {
   return (
-    <div className='text-lg flex flex-col gap-16'>
-      <p className='text-xl'>Kingdom Builders Ministries would like to invite you to the 1<sup>st</sup> Annual BBQ Cook Off. Where we will crown the first GRAND CHAMPION of the pit!</p>
+    <div className='sm:text-lg flex flex-col gap-8 sm:gap-16'>
+      <p className='sm:text-xl'>Kingdom Builders Ministries would like to invite you to the 1<sup>st</sup> Annual BBQ Cook Off. Where we will crown the first GRAND CHAMPION of the pit!</p>
       <div className='flex justify-evenly'>
         <div className='flex flex-col gap-8'>
-          <ul className='text-xl space-y-2'>
+          <ul className='sm:text-xl space-y-2'>
             <li><span className='text-gray-400'>Location:</span> Kingdom Builders Ministries Campus</li>
             <li><span className='text-gray-400'>Date:</span> August 19<sup>th</sup>, 2023</li>
             <li><span className='text-gray-400'>Sign Up Deadline:</span> August 10<sup>th</sup>, 2023</li>
             <li><span className='text-gray-400'>Entry Fee:</span> $100</li>
           </ul>
           <div className='bg-gray-500 py-8 flex justify-center'>
-            <div className='w-3/4 flex flex-col items-center text-center gap-6'>
-              <h2 className='text-4xl'>Prizes for the winners:</h2>
+            <div className='w-3/4 flex flex-col items-center text-center gap-3 sm:gap-6'>
+              <h2 className='text-2xl sm:text-4xl'>Prizes for the winners:</h2>
               <p>In each of the three (3) categories: chicken, ribs, and pork</p>
               <ul>
                 <li>3rd Place: A Ribbon and $75</li>
@@ -27,13 +27,13 @@ export default function Info() {
                 <li>1st Place: A Trophy and $200</li>
               </ul>
               <Separator />
-              <h3 className='text-2xl'>For the two overall top scorers:</h3>
+              <h3 className='text-lg sm:text-2xl'>For the two overall top scorers:</h3>
               <p><span className='text-black font-semibold'>Reserve Grand Champion:</span> A Trohpy and $250</p>
               <p><span className='text-black font-semibold'>Grand Champion:</span> A Trohpy and $500</p>
             </div>
           </div>
         </div>
-        <div className='w-[25rem]'>
+        <div className='w-[25rem] hidden sm:block'>
           <Image 
             src={bbq}
             height={500}
@@ -43,7 +43,7 @@ export default function Info() {
         </div>
       </div>
       <div className='flex flex-col gap-4'>
-        <h2 className='text-3xl underline uppercase'>Rules And Regulations</h2>
+        <h2 className='text-xl sm:text-3xl underline uppercase'>Rules And Regulations</h2>
         <ol>
           <li>1. Each team shall consist of a chief cook (Pit Master) and up to two (2) assistants.</li>
           <li>2. Each team is assigned acooking space. Pits, cookers, props, trailers, vehicles, tents, shall not exceed the boundaries of team&apos;s assigned cooking space. (Showdown space is 20x20.)</li>
