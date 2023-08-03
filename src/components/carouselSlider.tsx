@@ -23,7 +23,7 @@ const CarouselSlider = () => {
         {responsive.map((item) => (
           <div key={item.id} className='w-screen h-96 sm:h-screen opacity-50'>
             <Image 
-              className='object-fit object-contain'
+              className='object-fit object-contain sm:object-none'
               src={item.imageUrl}
               fill
               alt={`Slide ${item.id}`}

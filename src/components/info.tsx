@@ -30,7 +30,7 @@ export default function Info() {
               </ul>
               <Separator />
               <h3 className='text-lg sm:text-2xl'>For the two overall top scorers:</h3>
-              <p><span className='text-black font-semibold'>Reserve Grand Champion:</span> A Trohpy and $250</p>
+              <p><span className='text-black font-semibold'>Reserve Grand Champion:</span> A Trophy and $250</p>
               <p><span className='text-black font-semibold'>Grand Champion:</span> A Trohpy and $500</p>
             </div>
           </div>
